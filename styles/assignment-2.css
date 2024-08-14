@@ -5,6 +5,8 @@
     padding: 0;
 }
 .body{
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: black;
     font-family: "Inter", sans-serif;
 }
@@ -60,6 +62,7 @@
 }
 .banner-title{
     font-size: 4.875rem;
+    font-weight: 900;
 }
 #shape{
     font-family: 'Miama', sans-serif;
@@ -132,4 +135,49 @@
 .box-2 p{
     font-size: 0.8125rem;
     color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* Habits section styles */
+.habits{
+    color: white;
+    margin: 0px 190px;
+    margin-top: 100px;
+}
+.habits-title-container{
+    text-align: center;
+}
+.habits-title-container h3{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.habits-title-container p{
+    margin-top: 14px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.habits-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 58px;
+}
+.habits-card img{
+    border-radius: 50%;
+}
+.habits-card h6{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.habits-card p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+/* responsive for small devices */
+@media screen and (max-width:576px) {
+    
 }
