@@ -10,6 +10,9 @@
     background-color: black;
     font-family: "Inter", sans-serif;
 }
+button{
+    cursor: pointer;
+}
 
 /* header styles */
 .header{
@@ -247,6 +250,211 @@
     margin-left: 10px;
 }
 
+
+/* BMI Calculator section styles */
+.bmi-calculator{
+    margin-top: 100px;
+}
+.bmi-title-container{
+    text-align: center;
+}
+.bmi-title-container h3{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.bmi-title-container p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+}
+.bmi-form{
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 190px;
+    margin-top: 80px;
+}
+.chart table, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+#chart-tr td{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.chart{
+    width: 50%;
+}
+.chart table{
+    margin-top: 50px;
+}
+.bmi-form h4{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: white;
+}
+.bmi-form p{
+    margin-top: 15px;
+}
+.bmi-form p, td{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.calculator{
+    width: 50%;
+}
+.calculator input{
+    width: 40%;
+    padding: 13px 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 12px;
+    border: none;
+}
+#select{
+    width: 92%;
+}
+.bmi-input-1{
+    margin-top: 34px;
+}
+.bmi-input-1, .bmi-input-2{
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-form button{
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+    border-radius: 42px;
+    padding: 16px 70px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 34px;
+}
+
+/* Meet our Team section style */
+.meet-our-team{
+    margin-top: 100px;
+}
+.team-title-container{
+    text-align: center;
+}
+.team-title-container h3{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.team-title-container p{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+}
+.team-card-container{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    margin: 0px 190px;
+    margin-top: 58px;
+}
+.card-text{
+    color: white;
+    margin-top: 75%;
+    margin-left: 5%;
+}
+.team-card-container h5{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.team-card-container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+}
+.card1, .card2, .card3, .card4, .card5, .card6{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    width: 100%;
+    height: 272px;
+}
+.card1{
+    background-image: url(../images/trainer1.png);
+}
+.card2{
+    background-image: url(../images/trainer2.png);
+}
+.card3{
+    background-image: url(../images/trainer3.png);
+}
+.card4{
+    background-image: url(../images/trainer4.png);
+}
+.card5{
+    background-image: url(../images/trainer5.png);
+}
+.card6{
+    background-image: url(../images/trainer6.png);
+}
+
+
+/* Footer section styles */
+.footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 100px;
+    padding: 0px 190px;
+}
+.footer-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h3{
+    color: rgba(230, 83, 60, 1);
+    font-size: 4.375rem;
+    font-weight: 800;
+    font-style: italic;
+}
+.footer-title p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    margin-top: 20px;
+}
+.get-started{
+    margin: 70px 0px;
+}
+.get-started h4{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.get-started ul{
+    list-style: none;
+}
+.get-started li{
+    margin-top: 20px;
+}
+.get-started a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4375;
+}
+hr{
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.copyrights{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    padding: 35px 0px;
+    text-align: center;
+}
 
 
 /* responsive for small devices */
