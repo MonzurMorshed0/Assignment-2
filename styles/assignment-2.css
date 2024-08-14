@@ -222,6 +222,33 @@
 }
 
 
+/* Articles and Tips section styles */
+.articles-and-tips{
+    color: white;
+    margin: 0px 190px;
+    margin-top: 100px;
+}
+.articles-title-container h4{
+    font-size: 2rem;
+}
+.articles-card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.articles-card img{
+    width: 300px;
+    height: 200px;
+    border-radius: 16px;
+}
+.articles-card a{
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+}
+
+
+
 /* responsive for small devices */
 @media screen and (max-width:576px) {
     
