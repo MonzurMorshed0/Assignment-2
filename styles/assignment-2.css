@@ -25,11 +25,14 @@ button{
     padding-top: 60px;
     color: white;
 }
+.banner-container{
+    width: 75%;
+    margin: 0 auto;
+}
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 190px;
 }
 .nav-bar-name{
     color: rgba(230, 83, 60, 1);
@@ -61,7 +64,6 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 190px;
 }
 .banner-title{
     font-size: 4.875rem;
@@ -93,6 +95,9 @@ button{
     background: none;
     border: 1px solid white;
 }
+.banner-image-container{
+    position: relative;
+}
 .box-1{
     display: flex;
     justify-content: space-around;
@@ -103,8 +108,8 @@ button{
     backdrop-filter: blur(5px);
     background: rgba(48, 48, 48, 0.54);
     position: absolute;
-    left: 720px;
-    top: 520px;
+    right: 70%;
+    top: 70%;
     align-content: center;
 }
 .box-1 h4{
@@ -128,8 +133,8 @@ button{
     backdrop-filter: blur(5px);
     background: rgba(48, 48, 48, 0.54);
     position: absolute;
-    left: 1050px;
-    top: 250px;
+    left: 70%;
+    top: 25%;
     align-content: center;
 }
 .box-2 h4{
@@ -144,7 +149,8 @@ button{
 /* Habits section styles */
 .habits{
     color: white;
-    margin: 0px 190px;
+    width: 75%;
+    margin: 0 auto;
     margin-top: 100px;
 }
 .habits-title-container{
@@ -187,7 +193,8 @@ button{
 .run{
     background-color: rgba(34, 34, 34, 1);
     border-radius: 18px;
-    margin: 0px 190px;
+    width: 75%;
+    margin: 0 auto;
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -228,7 +235,8 @@ button{
 /* Articles and Tips section styles */
 .articles-and-tips{
     color: white;
-    margin: 0px 190px;
+    width: 75%;
+    margin: 0 auto;
     margin-top: 100px;
 }
 .articles-title-container h4{
@@ -337,6 +345,8 @@ button{
 
 /* Meet our Team section style */
 .meet-our-team{
+    width: 75%;
+    margin: 0 auto;
     margin-top: 100px;
 }
 .team-title-container{
@@ -361,12 +371,11 @@ button{
     gap: 20px;
     padding: 20px;
     align-items: center;
-    margin: 0px 190px;
     margin-top: 58px;
 }
 .card-text{
     color: white;
-    margin-top: 75%;
+    margin-top: 70%;
     margin-left: 5%;
 }
 .team-card-container h5{
@@ -384,9 +393,10 @@ button{
     border-radius: 18px;
     width: 100%;
     height: 272px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .card1{
-    background-image: url(../images/trainer1.png);
+    background-image:  url(../images/trainer1.png);
 }
 .card2{
     background-image: url(../images/trainer2.png);
@@ -409,18 +419,23 @@ button{
 .footer{
     background-color: rgba(255, 255, 255, 0.1);
     margin-top: 100px;
-    padding: 0px 190px;
+    /* padding: 0px 190px; */
+}
+.footer-container{
+    margin: 0 auto;
+    width: 75%;
 }
 .footer-texts{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 .footer h3{
     color: rgba(230, 83, 60, 1);
     font-size: 4.375rem;
     font-weight: 800;
     font-style: italic;
+    margin-top: 20%;
 }
 .footer-title p{
     color: rgba(255, 255, 255, 0.5);
@@ -441,6 +456,7 @@ button{
 .get-started li{
     margin-top: 20px;
 }
+/* pp */
 .get-started a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
@@ -459,5 +475,138 @@ hr{
 
 /* responsive for small devices */
 @media screen and (max-width:576px) {
+    /* Header section */
+    .header{
+        width: 100%;
+        padding: 0px;
+        padding-top: 50px;
+    }
+    .nav{
+        display: none;
+    }
+    .menu-bar{
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-title-container{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .banner-button-container{
+        width: 100%;
+    }
+    .banner-image-container{
+        margin-top: 50px;
+    }
+    .banner-button-container button{
+        padding: 16px 40px;
+
+    }
+    .box-1{
+        right: 50%;
+        top: 65%;
+    }
+    .box-2{
+        left: 50%;
+        top: 15%;
+    }
+    .banner-title{
+        font-size: 4.875rem;
+        font-weight: 900;
+    }
+
+    /* Habits section */
+    .habits{
+       margin: 0 auto;
+       margin-top: 100px;
+    }
+    .habits-card-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* Run an Extra mile section */
+    .run{
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .run button{
+        padding: 16px 170px;
+    }
+    .run-image-container{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    /* Articles and Tips section */
+        .articles-and-tips{
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .articles-card-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
     
+
+    /* BMI calculator section */
+    .bmi-calculator{
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 100%;
+    }
+    .bmi-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .chart{
+        width: 90%;
+    }
+    .calculator{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    /* Meet Our Team section */
+    .team-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-card-container{
+      position: relative;
+    }
+    .card-text{
+        margin-top: 55%;
+    }
+
+    /* Footer section */
+    .footer{
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .footer-texts{
+        flex-direction: column;
+        text-align: justify;
+    }
+    .get-started{
+        margin-top: 30px;
+    }
+    .footer-texts, hr, .copyrights{
+        width: 100%;
+    } 
+}
+
+@media screen and (min-width:577px) {
+    .menu-bar{
+        display: none;
+    }
 }
